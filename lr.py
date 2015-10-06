@@ -63,7 +63,7 @@ class LR(object):
         self.y_pred = T.argmax(self.p_y_given_x, axis = 1)
         
         # 组织模型用到的参数，即把W和b组装成list，便于在类外引用。
-        self.param = [self.W, self.b]
+        self.params = [self.W, self.b]
         
         # 记录模型的具体输入数据，便于在类外引用
         self.input = input
